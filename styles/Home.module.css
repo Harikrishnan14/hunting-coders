@@ -123,3 +123,8 @@
   list-style: none;
   font-weight: bold;
 }
+
+.HomeImg {
+  border-radius: 25px;
+  padding: 10px;
+}
