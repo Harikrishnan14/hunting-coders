@@ -112,18 +112,6 @@
   flex-grow: 1;
 }
 
-.mainNav ul {
-  display: flex;
-  justify-content: center;
-  margin-top: 50px;
-}
-
-.mainNav ul li {
-  margin: 0 25px;
-  list-style: none;
-  font-weight: bold;
-}
-
 .HomeImg {
   border-radius: 25px;
   padding: 10px;
