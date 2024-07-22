@@ -34,7 +34,7 @@ export default function Home() {
           Hunting Coders
         </h1>
 
-        <Image className={styles.HomeImg} src={HomeImg} height={345} width={518} />
+        <Image className={styles.HomeImg} src={HomeImg} alt="Home" height={345} width={518} />
 
         <p className={styles.description}>
           A Blog for hunting coders by a Hunting Coder

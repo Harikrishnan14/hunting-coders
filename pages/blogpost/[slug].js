@@ -1,10 +1,11 @@
 import { useRouter } from 'next/router'
 import React, { useEffect, useState } from 'react'
 import styles from '../../styles/BlogPost.module.css'
+import * as fs from 'fs'
 
 const Slug = (props) => {
 
-    const [blog, setBlog] = useState(props.Blog)
+    const [blog, setBlog] = useState(props.blog)
 
     return (
         <div className={styles.container}>
@@ -20,15 +21,25 @@ const Slug = (props) => {
     )
 }
 
-export async function getServerSideProps(context) {
+export async function getStaticPaths() {
+    return {
+        paths: [
+            { params: { slug: 'how-to-learn-javascript' } },
+            { params: { slug: 'how-to-learn-node' } },
+            { params: { slug: 'how-to-learn-react' } },
+        ],
+        fallback: true,
+    };
+}
 
-    const { slug } = context.query
+export async function getStaticProps(context) {
 
-    let data = await fetch(`http://localhost:3000/api/getblogs?slug=${slug}`)
-    let Blog = await data.json()
+    const { slug } = context.params
+
+    let myBlog = await fs.promises.readFile(`blogdata/${slug}.json`, 'utf-8')
 
     return {
-        props: { Blog },
+        props: { blog: JSON.parse(myBlog) },
     }
 }
 
