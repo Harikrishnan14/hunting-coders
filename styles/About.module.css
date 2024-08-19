@@ -1,0 +1,16 @@
+.container {
+    max-width: 45vw;
+    margin: 3rem auto;
+}
+
+.heading {
+    margin: 1.8rem 0;
+}
+
+.list {
+    margin: 1rem 1.5rem;
+}
+
+.list li {
+    margin: 0.5rem 0;
+}
