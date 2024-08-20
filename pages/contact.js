@@ -42,7 +42,7 @@ const Contact = () => {
                 <div className={styles.mb3}>
                     <label htmlFor="email" className={styles.formLabel}>Enter your email address</label>
                     <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} className="form-control" id="email" name="email" />
-                    <div id="emailHelp" className="form-text">We'll never share your email with anyone else.</div>
+                    <div id="emailHelp" className={styles.formText}>We'll never share your email with anyone else.</div>
                 </div>
                 <div className={styles.mb3}>
                     <label htmlFor="phone" className={styles.formLabel}>Enter your phone number</label>
@@ -50,9 +50,9 @@ const Contact = () => {
                 </div>
                 <div className={styles.mb3}>
                     <label htmlFor="desc" className={styles.formLabel}>Elaborate your concerns</label>
-                    <textarea className="form-control" value={desc} name="desc" onChange={(e) => setDesc(e.target.value)} placeholder="Leave a review here" id="desc" />
+                    <textarea className="form-control" value={desc} name="desc" onChange={(e) => setDesc(e.target.value)} placeholder="Leave a review here" id="desc" rows={3} />
                 </div>
-                <button type="submit" className="btn btn-primary">Submit</button>
+                <button type="submit" className={styles.submitBtn}>Submit</button>
             </form>
         </div>
     )

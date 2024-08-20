@@ -3,12 +3,12 @@
 }
 
 .main {
-  min-height: 100vh;
-  padding: 4rem 0;
+  height: 90vh;
+  /* padding: 4rem 0; */
   flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
 }
 
@@ -26,7 +26,7 @@
 .title {
   margin: 0;
   line-height: 1.15;
-  font-size: 4rem;
+  font-size: 3.5rem;
 }
 
 .title,
@@ -115,4 +115,45 @@
 .HomeImg {
   border-radius: 25px;
   padding: 10px;
+}
+
+.blogs {
+  max-width: 45vw;
+}
+
+.blogs h2 {
+  margin: 0 0 1.5rem 0;
+  line-height: 1.15;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.blogGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.blogItem {
+  padding: 20px;
+  border: 1px solid white;
+  border-radius: 20px;
+  transition: 0.5s ease;
+  max-height: 150px;
+
+  &:hover {
+    cursor: pointer;
+    border-color: red;
+    color: red;
+  }
+}
+
+.blogItem h3 {
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.blogItem p {
+  font-size: 0.75rem;
+  padding: 0px 10px 0px 0px;
 }
