@@ -12,12 +12,14 @@ const Blog = (props) => {
 
             <main className={styles.main}>
                 {blogs.map((item, id) => (
-                    <div className={styles.blogItem} key={id}>
-                        <Link href={`/blogpost/${item.slug}`}>
+                    <Link href={`/blogpost/${item.slug}`}>
+                        <div className={styles.blogItem} key={id}>
+                            {/* <Link href={`/blogpost/${item.slug}`}> */}
                             <h3 className={styles.blogItemh3}>{item.title}</h3>
-                        </Link>
-                        <p className={styles.blogItemP}>{item.metadesc.substr(0, 250)}...</p>
-                    </div>
+                            {/* </Link> */}
+                            <p className={styles.blogItemP}>{item.content.substr(0, 250)}...</p>
+                        </div>
+                    </Link>
                 ))}
             </main >
 

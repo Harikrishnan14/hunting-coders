@@ -1,11 +1,26 @@
 .main {
-    min-height: 100vh;
+    /* min-height: 100vh; */
     flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 50vw;
+    gap: 1.5rem;
+    margin: 0 auto;
+    justify-content: center;
     padding-top: 3rem;
+}
+
+.main a {
+    padding: 25px;
+    border: 1px solid white;
+    border-radius: 16px;
+    transition: 0.5s ease;
+    height: 185px;
+
+    &:hover {
+        border-color: red;
+        color: red;
+    }
 }
 
 .blogItem {
@@ -15,9 +30,10 @@
 
 .blogItemh3 {
     margin-bottom: 15px;
-    font-size: 1.75rem;
+    font-size: 1.5rem;
 }
 
 .blogItemP {
     max-width: 45vw;
+    font-size: 0.85rem;
 }
