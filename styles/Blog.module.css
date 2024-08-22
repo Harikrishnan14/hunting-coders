@@ -37,3 +37,28 @@
     max-width: 45vw;
     font-size: 0.85rem;
 }
+
+@media only screen and (max-width: 426px) {
+    .main {
+        max-width: 75vw;
+        padding-top: 2rem;
+    }
+
+    .blogItem {
+        margin-bottom: 10px;
+    }
+
+    .blogItemP {
+        max-width: 70vw;
+    }
+}
+
+@media only screen and (max-width: 321px) {
+    .main {
+        max-width: 85vw;
+    }
+    .blogItemh3 {
+        font-size: 1.25rem;
+        margin-bottom: 10px;
+    }
+}

@@ -9,3 +9,9 @@
     list-style: none;
     font-weight: bold;
 }
+
+@media only screen and (max-width: 321px) {
+    .mainNav ul li {
+        margin: 0 15px;
+    }
+  }
