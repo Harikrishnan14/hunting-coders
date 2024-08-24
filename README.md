@@ -23,6 +23,4 @@
 
 # Packages Used:
 
-1. **Frontend :**
-
-   1. **react-infinite-scroll-component :** It is a popular technique in web development to provide a seamless and dynamic user experience when dealing with large sets of data.
+1. **react-infinite-scroll-component :** It is a popular technique in web development to provide a seamless and dynamic user experience when dealing with large sets of data.
